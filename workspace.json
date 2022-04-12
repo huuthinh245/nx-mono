@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "customer": "apps/customer",
+    "customer-e2e": "apps/customer-e2e"
+  }
+}
