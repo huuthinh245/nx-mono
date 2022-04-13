@@ -1,0 +1,23 @@
+{
+  "root": "libs/share-ui",
+  "sourceRoot": "libs/share-ui/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/share-ui/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/share-ui"],
+      "options": {
+        "jestConfig": "libs/share-ui/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

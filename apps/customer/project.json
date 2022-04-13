@@ -3,6 +3,30 @@
   "sourceRoot": "apps/customer/src",
   "projectType": "application",
   "targets": {
+    "android-debug-dev": {
+      "executor": "@nrwl/workspace:run-commands",
+        "options": {
+          "command":  "ENVFILE=.env.dev nx run-android customer"
+        }
+    },
+    "android-release-dev": {
+      "executor": "@nrwl/workspace:run-commands",
+        "options": {
+          "command":  "ENVFILE=.env.dev nx build-android customer --apk"
+        }
+    },
+    "android-release-prod": {
+      "executor": "@nrwl/workspace:run-commands",
+        "options": {
+          "command":  "ENVFILE=.env.dev nx build-android customer"
+        }
+    },
+    "android-debug-prod": {
+      "executor": "@nrwl/workspace:run-commands",
+        "options": {
+          "command":  "ENVFILE=.env.prod nx run-android customer"
+        }
+    },
     "start": {
       "executor": "@nrwl/react-native:start",
       "options": {
@@ -30,7 +54,9 @@
     },
     "run-android": {
       "executor": "@nrwl/react-native:run-android",
-      "options": {}
+      "options": {
+        
+      }
     },
     "build-android": {
       "executor": "@nrwl/react-native:build-android",

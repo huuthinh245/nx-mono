@@ -92,3 +92,4 @@ buck-out/
 /
 
 apps/customer-e2e/artifacts
+apps/mobile-e2e/artifacts
