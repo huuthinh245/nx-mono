@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-app/share-function": ["libs/share-function/src/index.ts"],
       "@nx-app/share-ui": ["libs/share-ui/src/index.ts"]
     }
   },

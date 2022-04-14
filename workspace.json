@@ -5,6 +5,7 @@
     "customer-e2e": "apps/customer-e2e",
     "mobile": "apps/mobile",
     "mobile-e2e": "apps/mobile-e2e",
+    "share-function": "libs/share-function",
     "share-ui": "libs/share-ui"
   }
 }

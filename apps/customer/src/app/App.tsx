@@ -9,6 +9,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { Header, RNText } from '@nx-app/share-ui';
+import { shareFunction } from '@nx-app/share-function';
 import Config from 'react-native-config';
 export const App = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);
@@ -37,6 +38,9 @@ export const App = () => {
           <TouchableOpacity>
           <RNText testID='share-component-text-button' onPress={changeText}>
               change text
+          </RNText>
+          <RNText testID='share-component-text-button' onPress={changeText}>
+              {shareFunction()}
           </RNText>
           </TouchableOpacity>
         </ScrollView>

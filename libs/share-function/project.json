@@ -1,0 +1,23 @@
+{
+  "root": "libs/share-function",
+  "sourceRoot": "libs/share-function/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/share-function/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/share-function"],
+      "options": {
+        "jestConfig": "libs/share-function/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
